@@ -63,7 +63,7 @@ Now you're ready to initialise Mist for development:
 
 To update Mist in the future, run:
 
-    $ cd mist
+    $ cd AtlasMist
     $ git pull
     $ yarn
 
@@ -72,11 +72,11 @@ To update Mist in the future, run:
 For development we start the interface with a Meteor server for autoreload etc.
 *Start the interface in a separate terminal window:*
 
-    $ cd mist/interface && meteor --no-release-check
+    $ cd AtlasMist/interface && meteor --no-release-check
 
 In the original window you can then start Mist with:
 
-    $ cd mist
+    $ cd AtlasMist
     $ yarn dev:electron
 
 *NOTE: client-binaries (e.g. [geth](https://github.com/atlaswork/go-atlas)) specified in [clientBinaries.json](https://github.com/atlas/mist/blob/master/clientBinaries.json) will be checked during every startup and downloaded if out-of-date, binaries are stored in the [config folder](#config-folder)*
@@ -87,7 +87,7 @@ In the original window you can then start Mist with:
 
 Start the wallet app for development, *in a separate terminal window:*
 
-    $ cd mist/interface && meteor --no-release-check
+    $ cd AtlasMist/interface && meteor --no-release-check
 
     // and in another terminal
 
@@ -95,7 +95,7 @@ Start the wallet app for development, *in a separate terminal window:*
 
 In the original window you can then start Mist using wallet mode:
 
-    $ cd mist
+    $ cd AtlasMist
     $ yarn dev:electron --mode wallet
 
 
@@ -105,7 +105,7 @@ This is useful if you have a node running on another machine, though note that
 it's less secure than using the default IPC method.
 
 ```bash
-$ yarn dev:electron --rpc http://localhost:8545
+$ yarn dev:electron --rpc http://localhost:57200
 ```
 
 
@@ -115,10 +115,10 @@ You can pass command-line options directly to Geth by prefixing them with `--nod
 the command-line invocation:
 
 ```bash
-$ yarn dev:electron --mode mist --node-rpcport 19343 --node-networkid 2
+$ yarn dev:electron --mode atlasmist --node-rpcport 8080 --node-networkid 9082075
 ```
 
-The `--rpc` Mist option is a special case. If you set this to an IPC socket file
+The `--rpc` AtlasMist option is a special case. If you set this to an IPC socket file
 path then the `--ipcpath` option automatically gets set, i.e.:
 
 ```bash
@@ -135,7 +135,7 @@ $ yarn dev:electron --rpc /my/geth.ipc --node-ipcpath /my/geth.ipc
 ### Creating a local private Atlas blockchain for developing dApps
 
 See this guide to quickly set up a local private Atlas Blockchain network on your computer:
-https://gist.github.com/evertonfraga/9d65a9f3ea399ac138b3e40641accf23
+....coming soon
 
 
 ### Using Atlas Mist with a privatenet
@@ -144,7 +144,7 @@ To run a private network you will need to set the IPC path, network id and data
 folder:
 
 ```bash
-$ yarn dev:electron --rpc ~/Library/Atlas/geth.ipc --node-networkid 1234 --node-datadir ~/Library/Atlas/privatenet
+$ yarn dev:electron --rpc ~/Library/Atlas/geth.ipc --node-networkid 9082075 --node-datadir ~/Library/Atlas/privatenet
 ```
 
 _NOTE: since `ipcpath` is also a Atlas Mist option you do not need to also include a
