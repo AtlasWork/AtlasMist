@@ -1,6 +1,6 @@
-# Atlas Mist Desktop Browser
+# Atlas Mist Browser
 
-[![Join the chat at https://gitter.im/atlas/mist](https://badges.gitter.im/Join%20Chat.svg)](https://gitter.im/atlas/mist?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=badge)
+[![Join the chat at https://gitter.im/AtlasBlockchain/AtlasMist](https://badges.gitter.im/Join%20Chat.svg)](https://gitter.im/atlas/mist?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=badge)
 [![Build Status develop branch](https://travis-ci.org/atlas/mist.svg?branch=develop)](https://travis-ci.org/atlas/mist)
 [![Code Climate](https://codeclimate.com/github/ethereum/mist/badges/gpa.svg)](https://codeclimate.com/github/atlas/mist)
 
@@ -14,11 +14,11 @@ Please note that this repository is the Electron host for the Meteor based walle
 
 Please check the [Atlas Mist troubleshooting guide](https://github.com/atlaswork/mist/wiki).
 
-Or the [Gitter Channel](https://gitter.im/atlas/mist), to connect with the community for instant help.
+Or the [Gitter Channel](https://gitter.im/AtlasBlockchain/AtlasMist), to connect with the community for instant help.
 
 ## Installation
 
-If you want to install the app from a pre-built version on the [release page](https://github.com/atlaswork/mist/releases),
+If you want to install the app from a pre-built version on the [release page](https://github.com/atlaswork/atlasmist/releases),
 you can simply run the executeable after download.
 
 For updating simply download the new version and copy it over the old one (keep a backup of the old one if you want to be sure).
@@ -26,9 +26,9 @@ For updating simply download the new version and copy it over the old one (keep 
 #### Config folder
 The data folder for Mist is stored in other places:
 
-- Windows `%APPDATA%\Mist`
-- macOS `~/Library/Application\ Support/Mist`
-- Linux `~/.config/Mist`
+- Windows `%APPDATA%\AtlasMist`
+- macOS `~/Library/Application\ Support/AtlasMist`
+- Linux `~/.config/AtlasMist`
 
 
 ## Development
