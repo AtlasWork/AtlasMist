@@ -58,7 +58,7 @@ Install the latter ones via:
 Now you're ready to initialise Mist for development:
 
     $ git clone https://github.com/atlaswork/atlasmist.git
-    $ cd mist
+    $ cd AtlasMist
     $ yarn
 
 To update Mist in the future, run:
